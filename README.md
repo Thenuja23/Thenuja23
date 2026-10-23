@@ -67,6 +67,16 @@ Thenuja().say_hi()
 
 ---
 
+### 🐍 Contribution Snake
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thenuja23/Thenuja23/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thenuja23/Thenuja23/output/github-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/Thenuja23/Thenuja23/output/github-snake.svg" />
+</picture>
+</div>
+
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -112,15 +122,7 @@ Thenuja().say_hi()
 </picture>
 </div>
 
-### 🐍 Contribution Snake
 
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thenuja23/Thenuja23/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thenuja23/Thenuja23/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/Thenuja23/Thenuja23/output/github-snake.svg" />
-</picture>
-</div>
 
 ### 🧮 Detailed Metrics
 
