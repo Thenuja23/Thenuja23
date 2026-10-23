@@ -14,7 +14,7 @@
 </div>
 
 ---
-<img src="Untitled design (5).png" alt="Company Logo"/>
+<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
 
 
 ### 🐍 Contribution Snake
