@@ -14,6 +14,8 @@
 </div>
 
 ---
+<img src="Untitled_design__5_-removebg-preview.png" alt="Company Logo"/>
+
 
 ### 🐍 Contribution Snake
 
