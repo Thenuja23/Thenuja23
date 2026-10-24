@@ -29,21 +29,6 @@
 
 ## 👋 About Me
 
-```python
-class Thenuja:
-    def __init__(self):
-        self.role       = "Undergraduate Computer Science Student"
-        self.university = "University of Westminster"
-        self.languages  = ["Python", "Java", "JavaScript", "PHP"]
-        self.interests  = ["Machine Learning", "Artificial Intelligence", "Entrepreneurship"]
-        self.currently  = "Building projects and sharpening my ML skills"
-        self.goal       = "Use technology to build things that matter"
-
-    def say_hi(self):
-        print("Thanks for stopping by! Let's build something together 🚀")
-
-Thenuja().say_hi()
-```
 
 - 🎓 Studying **BSc (Hons) Computer Science** at the **University of Westminster**
 - 🌱 Currently learning: **Machine Learning & AI**
