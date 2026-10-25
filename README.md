@@ -27,7 +27,7 @@
 </picture>
 </div>
 
-## 👋 About Me
+## About Me
 
 
 - 🎓 Studying **BSc (Hons) Computer Science** at the **University of Westminster**
