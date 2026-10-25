@@ -18,7 +18,7 @@
 <img src="Ceylonforce Business Card.png" alt="Company Logo"/>
 
 
-### 🐍 Contribution Snake
+### Contribution Snake
 
 <div align="center">
 <picture>
