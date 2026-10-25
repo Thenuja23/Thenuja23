@@ -30,11 +30,15 @@
 ## About Me
 
 
-**Hello, I'm Thenuja Vilothmin Ganganath. Founder & CEO of Ceylonforce Holdings (Pvt) Ltd** and a **2nd-year Computer Science student at the University of Westminster** 🎓
+**Hello, I'm Thenuja Vilothmin Ganganath. Founder & CEO of Ceylonforce Holdings (Pvt) Ltd** and a **2nd-year Computer Science student at the University of Westminster** 
 
 I love turning ideas into working products, especially in **machine learning, algorithms and neural networks**.
 
-My Educational Background: Richmond College → ICBT → Informatics Institute of Technology (IIT) → University of Westminster
+My Educational Background: Richmond College → International College of Business and Technology (ICBT) → Informatics Institute of Technology (IIT) → University of Westminster
+<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
+<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
+<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
+<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
 
 ## 🛠️ Tech Stack
 
