@@ -38,7 +38,7 @@ My Educational Background: Richmond College → International College of Busines
 <img src="Ceylonforce Business Card.png" alt="Company Logo"/>
 <img src="Ceylonforce Business Card.png" alt="Company Logo"/>
 <img src="Ceylonforce Business Card.png" alt="Company Logo"/>
-<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
+<img src="Craftivist_Collective-removebg-preview.png" alt="UOW Logo"/>
 
 ## 🛠️ Tech Stack
 
