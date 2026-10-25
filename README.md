@@ -28,13 +28,15 @@
 </div>
 
 ## About Me
+# Hi, I'm Thenuja 👋
 
+**Founder & CEO of Ceylonforce Holdings (Pvt) Ltd** and a **2nd-year Computer Science student at the University of Westminster** 🎓
 
-- 🎓 Studying **BSc (Hons) Computer Science** at the **University of Westminster**
-- 🌱 Currently learning: **Machine Learning & AI**
-- 💬 Ask me about: **Python, Java, Machine Learning and building a startup**
+I love turning ideas into working products, especially in **machine learning, algorithms and neural networks**.
 
----
+## 🎓 Education
+
+Richmond College → ICBT → Informatics Institute of Technology (IIT) → University of Westminster
 
 ## 🛠️ Tech Stack
 
