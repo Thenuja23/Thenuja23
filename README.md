@@ -35,8 +35,8 @@
 I love turning ideas into working products, especially in **machine learning, algorithms and neural networks**.
 
 My Educational Background: Richmond College → International College of Business and Technology (ICBT) → Informatics Institute of Technology (IIT) → University of Westminster
-<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
-<img src="Ceylonforce Business Card.png" alt="Company Logo"/>
+<img src="images.png" alt="Richmond Logo"/>
+<img src="images.jpeg" alt="ICBT Logo"/>
 <img src="images-2.png" alt="IIT Logo"/>
 <img src="Craftivist Collective.jpg" alt="UOW Logo"/>
 
