@@ -35,18 +35,12 @@
 I love turning ideas into working products, especially in **machine learning, algorithms and neural networks**.
 
 My Educational Background: Richmond College → International College of Business and Technology (ICBT) → Informatics Institute of Technology (IIT) → University of Westminster <br>
-<style>
-  .logos { display: flex; justify-content: center; gap: 16px; }
-  .logos img { width: 90px; height: 90px; border-radius: 20px; object-fit: contain; }
-</style>
-
-<div class="logos">
-  <img src="images.png" alt="Richmond Logo"/>
-  <img src="images.jpeg" alt="ICBT Logo"/>
-  <img src="images-2.png" alt="IIT Logo"/>
-  <img src="Craftivist%20Collective.jpg" alt="UOW Logo"/>
-</div>
-
+<p align="center">
+  <img src="images.png" alt="Richmond Logo" width="90" height="90"/>&nbsp;&nbsp;&nbsp;
+  <img src="images.jpeg" alt="ICBT Logo" width="90" height="90"/>&nbsp;&nbsp;&nbsp;
+  <img src="images-2.png" alt="IIT Logo" width="90" height="90"/>&nbsp;&nbsp;&nbsp;
+  <img src="Craftivist%20Collective.jpg" alt="UOW Logo" width="90" height="90"/>
+</p>
 
 ## 🛠️ Tech Stack
 
