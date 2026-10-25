@@ -138,33 +138,7 @@ Richmond College → International College of Business and Technology (ICBT) →
 
 ---
 
-## 🚀 Featured Projects
 
-| Project | Description | Tech |
-|---|---|---|
-| 🔹 **[CeylonForce Web](https://github.com/Thenuja23/ceylonforce_web)** | Web project, live on Vercel: [ceylonforce-web.vercel.app](https://ceylonforce-web.vercel.app) | `TypeScript` |
-| 🔹 **[K-Point Hiriketiya Official Website](https://github.com/Thenuja23/K-Point-Hiriketiya-Official-Website)** | A website for a business chain in Hiriketiya | `Web` |
-
-<div align="center">
-
-<a href="https://github.com/Thenuja23/ceylonforce_web">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Thenuja23&repo=ceylonforce_web&hide_border=true&bg_color=0d1117&title_color=10B981&icon_color=10B981&text_color=c9d1d9">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Thenuja23&repo=ceylonforce_web&hide_border=true&bg_color=ffffff&title_color=059669&icon_color=059669&text_color=24292f">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Thenuja23&repo=ceylonforce_web&hide_border=true&bg_color=0d1117&title_color=10B981&icon_color=10B981&text_color=c9d1d9" alt="CeylonForce Web"/>
-</picture>
-</a>
-<a href="https://github.com/Thenuja23/K-Point-Hiriketiya-Official-Website">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Thenuja23&repo=K-Point-Hiriketiya-Official-Website&hide_border=true&bg_color=0d1117&title_color=10B981&icon_color=10B981&text_color=c9d1d9">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Thenuja23&repo=K-Point-Hiriketiya-Official-Website&hide_border=true&bg_color=ffffff&title_color=059669&icon_color=059669&text_color=24292f">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Thenuja23&repo=K-Point-Hiriketiya-Official-Website&hide_border=true&bg_color=0d1117&title_color=10B981&icon_color=10B981&text_color=c9d1d9" alt="K-Point Hiriketiya website"/>
-</picture>
-</a>
-
-</div>
-
----
 
 ## 🎯 Currently Focused On
 
