@@ -8,7 +8,9 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Thenuja23&label=Profile+views&color=10B981&style=for-the-badge" alt="profile views"/>
+<a href="https://github.com/Thenuja23">
+  <img src="https://komarev.com/ghpvc/?username=Thenuja23&label=Profile+views&color=10B981&style=for-the-badge" alt="profile views"/>
+</a>
 <img src="https://img.shields.io/github/followers/Thenuja23?label=Followers&style=for-the-badge&color=10B981&logo=github" alt="followers"/>
 
 </div>
