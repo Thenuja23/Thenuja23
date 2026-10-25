@@ -43,13 +43,23 @@ Richmond College → International College of Business and Technology (ICBT) →
   <img src="Craftivist%20Collective.jpg" alt="UOW Logo" width="90" height="90"/>
 </p>
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 <div align="center">
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,java,js,php,html,css" alt="languages"/>
+<!-- Languages -->
+<img src="https://skillicons.dev/icons?i=python,java,js,ts,php,html,css" alt="languages"/>
+
+<!-- Databases -->
+<img src="https://skillicons.dev/icons?i=mysql,mariadb" alt="databases"/>
+
+<!-- ML & Data -->
+<img src="https://skillicons.dev/icons?i=tensorflow,sklearn,py" alt="ML"/>
+
+<!-- Tools -->
+<img src="https://skillicons.dev/icons?i=git,github,vscode,idea,pycharm,linux" alt="tools"/>
 
 **Databases**
 
