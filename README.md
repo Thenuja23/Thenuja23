@@ -329,6 +329,13 @@ python3 portrait_binary.py --decode portrait_binary.txt
 
 </div>
 
+### 🎖️ Achievements
+
+<div align="center">
+  <img src="assets/yolo.png" alt="YOLO" width="80"/>
+  <img src="assets/quickdraw.png" alt="Quickdraw" width="80"/>
+</div>
+
 ### 🏆 Trophies
 
 <div align="center">
@@ -338,6 +345,7 @@ python3 portrait_binary.py --decode portrait_binary.txt
   <img src="https://github-profile-trophy.vercel.app/?username=Thenuja23&theme=onedark&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" alt="trophies"/>
 </picture>
 </div>
+
 ---
 
 ## 📈 Contribution Activity
