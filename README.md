@@ -332,8 +332,8 @@ python3 portrait_binary.py --decode portrait_binary.txt
 ### 🎖️ Achievements
 
 <div align="center">
-  <img src="assets/yolo.png" alt="YOLO" width="80"/>
-  <img src="assets/quickdraw.png" alt="Quickdraw" width="80"/>
+  <img src="https://raw.githubusercontent.com/Thenuja23/Thenuja23/main/assets/yolo.png" alt="YOLO" width="80"/>
+  <img src="https://raw.githubusercontent.com/Thenuja23/Thenuja23/main/assets/quickdraw.png" alt="Quickdraw" width="80"/>
 </div>
 
 ### 🏆 Trophies
