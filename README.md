@@ -49,10 +49,12 @@ Richmond College → International College of Business and Technology (ICBT) →
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/binary/portrait_dark.png" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/binary/portrait_light.png" />
-  <img width="430" alt="Portrait built from 12,720 bits" src="assets/binary/portrait_light.png" />
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/binary/portrait_dark.gif" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/binary/portrait_light.gif" />
+  <img width="430" alt="Portrait built from 12,720 bits, decrypting" src="assets/binary/portrait_light.gif" />
 </picture>
+
+<sub><code>root@thenuja:~$ ./decrypt --portrait</code></sub>
 
 **12,720 bits · 1,590 bytes · 182 × 136 cells · one bit per glyph**
 </div>
@@ -63,14 +65,6 @@ Every glyph above is one bit, used exactly once. Group the bits in 8s, read MSB-
 01000110 01101111 01110101 01101110 01100100 01100101 01110010
     F        o        u        n        d        e        r
 ```
-
-### `root@thenuja:~$ ./decrypt --portrait`
-
-<div align="center">
-  <img width="430" alt="Binary noise resolving into the portrait, green on black" src="assets/binary/decrypt.gif" />
-</div>
-
-Random bits above the scan line, locked-in bits below it, until all 12,720 land in place — then the fingerprint verifies.
 
 <details>
 <summary><b>Copy the full bit art</b> — 12,720 bits, 136 lines</summary>
