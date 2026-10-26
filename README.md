@@ -226,29 +226,50 @@ python3 portrait_binary.py --decode portrait_binary.txt
 
 **Languages**
 
-<!-- Languages -->
 <img src="https://skillicons.dev/icons?i=python,java,js,ts,php,html,css" alt="languages"/>
 
-<!-- Databases -->
-<img src="https://skillicons.dev/icons?i=mysql,mariadb" alt="databases"/>
+**Frameworks & Libraries**
 
-<!-- ML & Data -->
-<img src="https://skillicons.dev/icons?i=tensorflow,sklearn,py" alt="ML"/>
+<img src="https://skillicons.dev/icons?i=nextjs,react,nodejs,electron,tailwind,vite,prisma" alt="frameworks"/>
 
-<!-- Tools -->
-<img src="https://skillicons.dev/icons?i=git,github,vscode,idea,pycharm,linux" alt="tools"/>
+**CMS**
+
+<img src="https://skillicons.dev/icons?i=wordpress" alt="cms"/>
 
 **Databases**
 
-<img src="https://skillicons.dev/icons?i=mysql,mariadb" alt="databases"/>
+<img src="https://skillicons.dev/icons?i=mysql,mariadb,mongodb,oracle,firebase,supabase" alt="databases"/>
+
+**Cloud & Deployment**
+
+<img src="https://skillicons.dev/icons?i=aws,vercel,firebase,supabase" alt="cloud"/>
 
 **Machine Learning & Data**
+
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn" alt="ML"/>
 
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
+
+**AI Tools**
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
+![Perplexity](https://img.shields.io/badge/Perplexity-1FB8CD?style=for-the-badge&logo=perplexity&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode-000000?style=for-the-badge&logoColor=white)
+
+**Design & 3D**
+
+<img src="https://skillicons.dev/icons?i=figma,blender" alt="design"/>
+
+**Package Managers**
+
+<img src="https://skillicons.dev/icons?i=npm,pnpm" alt="package managers"/>
 
 **Tools**
 
