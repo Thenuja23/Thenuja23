@@ -273,7 +273,9 @@ python3 portrait_binary.py --decode portrait_binary.txt
 
 **Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode,idea,pycharm,linux" alt="tools"/>
+<img src="https://skillicons.dev/icons?i=git,github,vscode,idea,pycharm,linux,kali" alt="tools"/>
+
+![VirtualBox](https://img.shields.io/badge/VirtualBox-21416B?style=for-the-badge&logo=virtualbox&logoColor=white)
 
 </div>
 
