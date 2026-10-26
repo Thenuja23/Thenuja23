@@ -51,7 +51,7 @@ Richmond College → International College of Business and Technology (ICBT) →
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/binary/portrait_dark.gif" />
   <source media="(prefers-color-scheme: light)" srcset="assets/binary/portrait_light.gif" />
-  <img width="430" alt="Portrait built from 12,720 bits, decrypting" src="assets/binary/portrait_light.gif" />
+  <img width="760" alt="Portrait made of 12,720 binary digits, decrypting" src="assets/binary/portrait_light.gif" />
 </picture>
 
 <sub><code>root@thenuja:~$ ./decrypt --portrait</code></sub>

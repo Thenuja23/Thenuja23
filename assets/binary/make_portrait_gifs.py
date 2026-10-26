@@ -1,15 +1,17 @@
-"""Animate the portrait itself: the same image, decryption running in place.
+"""Animate the portrait drawn with actual binary digits, not pixel blocks.
 
 Two theme variants are produced so the existing <picture> element can stay and
 just swap its sources:
 
-  portrait_dark.gif    green on near-black   (GitHub dark mode)
-  portrait_light.gif   dark green on white   (GitHub light mode)
+  portrait_dark.gif    green digits on near-black   (GitHub dark mode)
+  portrait_light.gif   dark green digits on white   (GitHub light mode)
 
 Frames are built from the *same* art (182 x 136 cells) and the *same* static
-render, so every bit stays in the cell it occupies in the still image.
+render, so every bit stays in the cell it occupies in the still image. Each
+cell is drawn with a 5x7 glyph for '0' or '1' -- never a filled rectangle --
+so the portrait is literally made of binary code.
 
-  phase 1  boot      prompt types, field is noise
+  phase 1  boot      prompt types, field is a wall of raw digits
   phase 2  scan      a decode line sweeps down; rows behind it lock to real bits
   phase 3  hold      full portrait, ACCESS GRANTED, refresh sweep, blinking cursor
   phase 4  power-off fade, so the loop restarts cleanly
@@ -24,21 +26,22 @@ ART = "portrait_binary.txt"
 TONE_SOURCES = ("portrait_dark.png", "portrait_binary.png")   # same geometry as the still
 
 COLS, ROWS = 182, 136
-CW, CH = 3, 6
+CW, CH = 6, 12                # one bit = one 6x12 cell, digit glyph is 5x7
 MARGIN, TOP = 24, 60
 W, H = COLS * CW + MARGIN * 2, ROWS * CH + TOP + 24
 FIELD_W, FIELD_H = COLS * CW, ROWS * CH
+GLYPH_DX, GLYPH_DY = 0, 2     # 5x7 digit inside its 6x12 cell
 
 DARK = dict(
     bg=(5, 8, 10), chrome=(9, 13, 16), rule=(22, 34, 40),
-    ink=(16, 210, 138), dim=(0, 104, 68), hot=(186, 255, 224),
+    ink=(32, 240, 168), dim=(0, 132, 86), hot=(196, 255, 230),
     text=(150, 168, 178), text_dim=(78, 92, 100),
     accent=(16, 185, 129), bright=(226, 240, 236),
     red=(255, 95, 86), amber=(255, 189, 46), out="portrait_dark.gif",
 )
 LIGHT = dict(
     bg=(255, 255, 255), chrome=(242, 246, 244), rule=(206, 219, 213),
-    ink=(0, 118, 76), dim=(150, 200, 180), hot=(0, 52, 36),
+    ink=(0, 96, 60), dim=(128, 182, 158), hot=(0, 40, 26),
     text=(58, 72, 68), text_dim=(132, 148, 143),
     accent=(5, 145, 100), bright=(18, 38, 32),
     red=(255, 95, 86), amber=(230, 160, 20), out="portrait_light.gif",
@@ -47,6 +50,16 @@ LIGHT = dict(
 FONTS = ["/System/Library/Fonts/Menlo.ttc", "/System/Library/Fonts/SFNSMono.ttf"]
 COMMAND = "./decrypt --portrait"
 FINGERPRINT = "d97378e23e78681e"
+
+# 5x7 digits: a real '0' has a hole, a real '1' is a stem with a base serif.
+GLYPH = {
+    "0": ("01110", "10001", "10001", "10001", "10001", "10001", "01110"),
+    "1": ("00100", "01100", "00100", "00100", "00100", "00100", "01110"),
+}
+GLYPH_BYTES = {
+    ch: tuple(bytes(255 if b == "1" else 0 for b in row) for row in rows)
+    for ch, rows in GLYPH.items()
+}
 
 
 def font(size):
@@ -109,9 +122,29 @@ def shade(rgb, level, th):
     return tuple(max(0, min(255, int(v * level))) for v in rgb)
 
 
-def field_image(locked_rows, scan_row, tone, noise, boot, th):
-    img = Image.new("RGB", (COLS, ROWS), th["bg"])
-    px = img.load()
+def glyph_mask(chars):
+    """One 5x7 digit per cell, written straight into a full-size L mask."""
+    buf = bytearray(FIELD_W * FIELD_H)
+    span = FIELD_W
+    for r in range(ROWS):
+        ybase = (r * CH + GLYPH_DY) * span
+        for c in range(COLS):
+            ch = chars[r][c]
+            if ch == " ":
+                continue
+            x0 = ybase + c * CW + GLYPH_DX
+            for gy, src in enumerate(GLYPH_BYTES[ch]):
+                at = x0 + gy * span
+                buf[at:at + 5] = src
+    return Image.frombytes("L", (FIELD_W, FIELD_H), bytes(buf))
+
+
+def field_image(locked_rows, scan_row, tone, noise, boot, th, sweep_row=None):
+    """Digit grid -> glyph mask -> per-cell colour, keeping every bit in place."""
+    chars = [[" "] * COLS for _ in range(ROWS)]
+    colors = Image.new("RGB", (COLS, ROWS), th["bg"])
+    cp = colors.load()
+
     for r in range(ROWS):
         locked = (not boot) and r < locked_rows
         for c in range(COLS):
@@ -119,21 +152,30 @@ def field_image(locked_rows, scan_row, tone, noise, boot, th):
             if locked:
                 b = GRID[r][c]
                 if b == " ":
-                    px[c, r] = th["bg"]
-                else:
-                    level = 0.45 + 0.55 * t
-                    px[c, r] = shade(th["ink"] if b == "1" else th["dim"], level, th)
+                    continue
+                chars[r][c] = b
+                cp[c, r] = shade(th["ink"] if b == "1" else th["dim"],
+                                 0.68 + 0.32 * t, th)
             else:
                 b, level = noise[r][c]
-                if t < 0.04 and level < 0.35:
-                    px[c, r] = th["bg"]
-                else:
-                    px[c, r] = shade(th["hot"] if b == "1" else th["ink"],
-                                     level * (0.45 + 0.55 * t), th)
-        if (not boot) and r == scan_row:
+                chars[r][c] = b
+                cp[c, r] = shade(th["hot"] if b == "1" else th["ink"],
+                                 level * (0.50 + 0.50 * t), th)
+        if ((not boot) and r == scan_row) or (sweep_row is not None and r == sweep_row):
             for c in range(COLS):
-                px[c, r] = th["hot"]
-    return img.resize((FIELD_W, FIELD_H), Image.NEAREST)
+                if chars[r][c] == " ":
+                    chars[r][c] = "0" if c % 2 else "1"
+                cp[c, r] = th["hot"]
+
+    mask = glyph_mask(chars)
+    field = Image.new("RGB", (FIELD_W, FIELD_H), th["bg"])
+    field.paste(colors.resize((FIELD_W, FIELD_H), Image.NEAREST), (0, 0), mask)
+
+    if ((not boot) and scan_row >= 0) or sweep_row is not None:
+        row = scan_row if (not boot) and scan_row >= 0 else sweep_row
+        y = min(FIELD_H - 2, row * CH + 10)
+        ImageDraw.Draw(field).rectangle([0, y, FIELD_W, y + 1], fill=th["hot"])
+    return field
 
 
 def chrome(th):
@@ -203,11 +245,8 @@ def build(th, tone, seed=11):
                     True, "", th)
         elif i < boot + scan + hold:
             k = i - (boot + scan)
-            field = field_image(ROWS, -1, tone, noise, False, th)
-            if k < 4:
-                y = int((k / 4) * FIELD_H)
-                ImageDraw.Draw(field).rectangle([0, y, FIELD_W, y + 3],
-                                                fill=shade(th["hot"], 0.35, th))
+            sweep = int(k / 4 * ROWS) if k < 4 else None
+            field = field_image(ROWS, -1, tone, noise, False, th, sweep_row=sweep)
             overlay(img, COMMAND, 1.0, "12720 bits placed", k % 2 == 0,
                     "ACCESS GRANTED" if k else "", th)
         else:

@@ -30,6 +30,12 @@ BAYER = ([0, 8, 2, 10],
          [3, 11, 1, 9],
          [15, 7, 13, 5])
 
+# 5x7 digits: a real '0' has a hole, a real '1' is a stem with a base serif.
+GLYPH = {
+    "0": ("01110", "10001", "10001", "10001", "10001", "10001", "01110"),
+    "1": ("00100", "01100", "00100", "00100", "00100", "00100", "01110"),
+}
+
 
 def font(size=FONT_SIZE):
     for path in FONTS:
@@ -128,7 +134,6 @@ def shade(level, theme):
 
 
 def render(cells, lines, path, title, theme):
-    fnt = font()
     pad = 10
     w = CELL_W * len(lines[0]) + pad * 2
     h = CELL_H * len(lines) + pad * 2 + (20 if title else 0)
@@ -143,8 +148,11 @@ def render(cells, lines, path, title, theme):
             if ch == " ":
                 continue
             col = shade(cells[y][x], theme)
-            d.text((pad + x * CELL_W, top + y * CELL_H - 2), ch, font=fnt,
-                   fill=col, stroke_width=1, stroke_fill=col)
+            ox, oy = pad + x * CELL_W, top + y * CELL_H + 2
+            for gy, row in enumerate(GLYPH[ch]):
+                for gx, bit in enumerate(row):
+                    if bit == "1":
+                        d.point((ox + gx, oy + gy), fill=col)
     img.save(path)
 
 
