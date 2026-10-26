@@ -64,6 +64,14 @@ Every glyph above is one bit, used exactly once. Group the bits in 8s, read MSB-
     F        o        u        n        d        e        r
 ```
 
+### `root@thenuja:~$ ./decrypt --portrait`
+
+<div align="center">
+  <img width="430" alt="Binary noise resolving into the portrait, green on black" src="assets/binary/decrypt.gif" />
+</div>
+
+Random bits above the scan line, locked-in bits below it, until all 12,720 land in place — then the fingerprint verifies.
+
 <details>
 <summary><b>Copy the full bit art</b> — 12,720 bits, 136 lines</summary>
 
