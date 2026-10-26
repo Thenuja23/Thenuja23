@@ -333,9 +333,9 @@ python3 portrait_binary.py --decode portrait_binary.txt
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Thenuja23&theme=onedark&no-frame=true&no-bg=true&row=1&column=7&margin-w=10">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=Thenuja23&theme=flat&no-frame=true&no-bg=true&row=1&column=7&margin-w=10">
-  <img src="https://github-profile-trophy.vercel.app/?username=Thenuja23&theme=onedark&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" alt="trophies"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://YOUR-PROJECT.vercel.app/?username=Thenuja23&theme=onedark&no-frame=true&no-bg=true&row=1&column=7&margin-w=10">
+  <source media="(prefers-color-scheme: light)" srcset="https://YOUR-PROJECT.vercel.app/?username=Thenuja23&theme=flat&no-frame=true&no-bg=true&row=1&column=7&margin-w=10">
+  <img src="https://YOUR-PROJECT.vercel.app/?username=Thenuja23&theme=onedark&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" alt="trophies"/>
 </picture>
 </div>
 
