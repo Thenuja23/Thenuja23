@@ -352,12 +352,11 @@ python3 portrait_binary.py --decode portrait_binary.txt
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Thenuja23&bg_color=0d1117&color=10B981&line=10B981&point=ffffff&area=true&area_color=10B981&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Thenuja23&bg_color=ffffff&color=059669&line=059669&point=24292f&area=true&area_color=059669&hide_border=true">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Thenuja23&bg_color=0d1117&color=10B981&line=10B981&point=ffffff&area=true&area_color=10B981&hide_border=true" alt="activity graph" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Thenuja23&bg_color=0d1117&color=10B981&line=10B981&point=ffffff&area=true&area_color=10B981&hide_border=true&v=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Thenuja23&bg_color=ffffff&color=059669&line=059669&point=24292f&area=true&area_color=059669&hide_border=true&v=1">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Thenuja23&bg_color=0d1117&color=10B981&line=10B981&point=ffffff&area=true&area_color=10B981&hide_border=true&v=1" alt="activity graph" width="100%"/>
 </picture>
 </div>
-
 
 
 ### 🧮 Detailed Metrics
